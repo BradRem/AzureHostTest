@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{41936A94-EF1F-486D-8F18-2AA54967BDED}"
 	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
+		README. = README.
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Net", "Library.Net\Library.Net.csproj", "{3192C12B-A806-448A-B7E4-CA60B3FAFF87}"
