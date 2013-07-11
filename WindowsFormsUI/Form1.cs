@@ -12,8 +12,26 @@ namespace WindowsFormsUI
         public Form1()
         {
             InitializeComponent();
+        }
 
-            BusinessPrincipal.Login("test", "password");
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                BusinessPrincipal.Login("test", "password");
+            }
+            catch (Exception ex)
+            {
+                var sb = new StringBuilder();
+                Exception inner = ex;
+                while (inner != null)
+                {
+                    sb.AppendFormat("{0} - {1}{2}{2}", inner.GetType(), inner.Message, Environment.NewLine);
+                    inner = inner.InnerException;
+                }
+                MessageBox.Show(sb.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+            }
 
             if (!Csla.ApplicationContext.User.Identity.IsAuthenticated)
             {
@@ -40,5 +58,6 @@ namespace WindowsFormsUI
                 MessageBox.Show(sb.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }
