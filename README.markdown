@@ -22,6 +22,11 @@ CSLA .NET is a software development framework that helps
 you build a reusable, maintainable object-oriented 
 business layer for your app.
 
+Note: there are two branches in GitHub. The master branch
+is just the CSLA based projects. The traditionalWCF branch
+includes another set of projects that uses a standard
+WCF service as a comparison.
+
 ##The Solution Files:##
 
 The AzureHost project is the Windows Azure project where
