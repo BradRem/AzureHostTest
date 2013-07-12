@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="NonCSLA.WebRole.RandomNumbers" CodeBehind="RandomNumbers.svc.cs" %>

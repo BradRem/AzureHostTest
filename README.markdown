@@ -24,6 +24,18 @@ business layer for your app.
 
 ##The Solution Files:##
 
+This solution contains two groups of files. The three projects
+prefixed with "NonCSLA" demonstrates a standard WCF service
+that is accessed by a WinForms application. These project
+do not contain anyCSLA. The NonCSLA Debug/Release configurations
+will compile and run these projects.  The NonCSLA projects
+were created to demonstrate that wsHttpBinding does indeed work
+and to compare with the CSLA-based projects and settings.
+
+The other project is the CSLA-based projects that do not
+yet work in Azure. These are compiled from the CSLA Debug/Release
+configurations.
+
 The AzureHost project is the Windows Azure project where
 the Azure roles are defined and configured.
 
